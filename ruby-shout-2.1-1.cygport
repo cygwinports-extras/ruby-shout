@@ -1,0 +1,18 @@
+inherit ruby
+
+DESCRIPTION="Ruby libshout bindings"
+HOMEPAGE="http://www.dingoskidneys.com/~jaredj/shout.html"
+SRC_URI="http://www.dingoskidneys.com/~jaredj/downloads/${P}.tar.gz"
+
+RDOC_SOURCE=. # relative to ext/
+
+src_compile() {
+	lndirs
+	cd ${B}/ext
+	ruby_compile
+}
+
+src_install() {
+	cd ${B}/ext
+	ruby_install
+}

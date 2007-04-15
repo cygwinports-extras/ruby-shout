@@ -1,0 +1,4 @@
+category: Ruby Audio Video
+requires: cygwin ruby libshout3
+sdesc: "Ruby bindings for libshout"
+ldesc: "Ruby bindings to the libshout icecast client library."
